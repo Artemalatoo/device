@@ -8,6 +8,7 @@ public abstract class Device {
     public Device(String name, double price, double weight) {
         this.name = name;
         this.price = price;
+
         this.weight = weight;
     }
 
