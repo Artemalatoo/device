@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.devices.HelloController">
+    <TabPane layoutY="-1.0" prefHeight="413.0" prefWidth="470.0">
+        <!-- Smartphone Tab -->
+        <Tab text="Smartphone">
+            <VBox spacing="10.0">
+                <TextField fx:id="smartphoneName" promptText="Enter Smartphone Name" />
+                <TextField fx:id="smartphoneWeight" promptText="Enter Weight" />
+                <TextField fx:id="smartphonePrice" promptText="Enter Price" />
+                <TextField fx:id="screenSize" promptText="Enter Screen Size" />
+                <TextField fx:id="cameraResolution" promptText="Enter Camera Resolution" />
+         
+             <!-- Buttons -->
+             <Button fx:id="addButton" text="Add Device" />
+             <Button fx:id="removeButton" text="Remove Device" />
+         
+             <!-- ListView -->
+             <ListView fx:id="listView" prefHeight="115.0" prefWidth="470.0" />
+            </VBox>
+        </Tab>
+
+        <!-- Tablet Tab -->
+        <Tab text="Laptop">
+            <VBox spacing="10.0">
+                <TextField fx:id="tabletName" promptText="Enter Tablet Name" />
+                <TextField fx:id="tabletWeight" promptText="Enter Weight" />
+                <TextField fx:id="tabletPrice" promptText="Enter Price" />
+                <TextField fx:id="batteryLife" promptText="Enter Battery Life" />
+                <!-- Add CheckBox for hasStylus -->
+                <CheckBox fx:id="hasStylus" text="Has Stylus" />
+            </VBox>
+        </Tab>
+
+        <!-- Laptop Tab -->
+        <Tab text="Laptop">
+            <VBox spacing="10.0">
+                <TextField fx:id="laptopName" promptText="Enter Laptop Name" />
+                <TextField fx:id="laptopWeight" promptText="Enter Weight" />
+                <TextField fx:id="laptopPrice" promptText="Enter Price" />
+                <TextField fx:id="ramSize" promptText="Enter RAM Size" />
+                <TextField fx:id="processorType" promptText="Enter Processor Type" />
+            </VBox>
+        </Tab>
+    </TabPane>
+</AnchorPane>
